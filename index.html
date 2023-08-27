@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>responsive demo</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        background-color: gray;
+        font-size: 25px;
+      }
+
+      body {
+        margin: 0 auto;
+        background-color: rgb(163, 163, 163);
+      }
+
+      img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        object-position: bottom;
+        
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+        <img
+        srcset="
+          header.jpeg 320w,
+          header.jpeg 480w,
+          header.jpeg 800w
+        "
+        sizes="(max-width: 320px) 280px,
+                  (max-width: 480px) 440px,
+                  800px"
+        src="header.jpeg" />
+        </div>
+
+        <h1>My website</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget venenatis ligula. Ut lacinia at dolor vitae pulvinar. Aliquam pretium dignissim eros. Integer faucibus, dui non aliquet bibendum, lectus orci lobortis odio, ornare porttitor est tellus eget velit. Nulla eros elit, malesuada id neque vel, viverra vehicula neque. Nullam auctor turpis non leo iaculis finibus. Quisque blandit arcu venenatis libero tempor, ac pulvinar ligula dapibus.</p>
+
+        <div class="container">
+        <img
+        srcset="
+          img.jpeg 320w,
+          img.jpeg 480w,
+          img.jpeg 800w
+        "
+        sizes="(max-width: 320px) 280px,
+                  (max-width: 480px) 440px,
+                  800px"
+        src="img.jpeg" />
+        </div>
+
+        <p>Suspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis dignissim.</p>
+
+        <div class="container">
+        <img
+        srcset="
+          img.jpeg 320w,
+          img.jpeg 480w,
+          img.jpeg 800w
+        "
+        sizes="(max-width: 320px) 280px,
+                  (max-width: 480px) 440px,
+                  800px"
+        src="img.jpeg" />
+        </div>
+
+        
+      </section>
+    </main>
+  </body>
+</html>
+
+
